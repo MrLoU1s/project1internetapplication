@@ -10,7 +10,7 @@
     <p>monke</p>
     <?php
     require_once "load.php";
-    print $Obj->user_age("Alex",2004);
+    print $obj->user_age("Boots",2004);
     ?>
 </body>
 </html>
