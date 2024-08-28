@@ -2,7 +2,7 @@
 
 require_once "fnc.php";
 
-$obj = new fnc();
+$obj = new user_details();
 
 
 ?>
