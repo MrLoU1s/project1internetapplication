@@ -8,5 +8,9 @@
 <body>
     <p>neggro</p>
     <p>monke</p>
+    <?php
+    require_once "load.php";
+    print $Obj->user_age("Alex",2004);
+    ?>
 </body>
 </html>

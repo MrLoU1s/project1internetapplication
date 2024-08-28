@@ -13,7 +13,7 @@ class fnc{
 
     public function user_age($name,$yob){
         $age=date('Y')-$yob;
-        return $name."is".$age;
+        return $name." is ".$age;
     }
 }
 
