@@ -41,4 +41,9 @@ foreach($arr AS $color){
 //     print "It is not a file";
 // }
 
+// do this if you just want to create a String
+?>
+<h1>Today is Wednesday</h1>
+
+<?php
 ?>
