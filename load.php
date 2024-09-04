@@ -1,15 +1,18 @@
 <?php
 
-require_once "user_details.php";
+require_once "Layout/Layout.php";
 
-$obj = new user_details();
+$ObjLayout = new Layout();
+
+require_once "Menus/Menus.php";
+$ObjMenus = new Menus();
 
 
-$arr = ["black","white","green","yellow"];
+// $arr = ["black","white","green","yellow"];
 
-foreach($arr AS $color){
-    print $color. "<br>";
-}
+// foreach($arr AS $color){
+//     print $color. "<br>";
+// }
 
 // //brings path of current directory!
 // print dirname(__FILE__);
