@@ -11,34 +11,34 @@ foreach($arr AS $color){
     print $color. "<br>";
 }
 
-//brings path of current directory!
-print dirname(__FILE__);
-print "<br>";
-print "<br>";
+// //brings path of current directory!
+// print dirname(__FILE__);
+// print "<br>";
+// print "<br>";
 
-//shows the current file name
-print basename($_SERVER["PHPh_SELF"]);
+// //shows the current file name
+// print basename($_SERVER["PHPh_SELF"]);
 
-print "<br>";
-print "<br>";
+// print "<br>";
+// print "<br>";
 
-//checks if file exists
-if(file_exists("index.php")){
-    print "File exists";
-}
-else{
-    print "File does not exist";
-}
+// //checks if file exists
+// if(file_exists("index.php")){
+//     print "File exists";
+// }
+// else{
+//     print "File does not exist";
+// }
 
-print "<br>";
-print "<br>";
+// print "<br>";
+// print "<br>";
 
-//checks if it is a file
-if(is_file("index.php")){
-    print "It is a file";
-}
-else{
-    print "It is not a file";
-}
+// //checks if it is a file
+// if(is_file("index.php")){
+//     print "It is a file";
+// }
+// else{
+//     print "It is not a file";
+// }
 
 ?>
