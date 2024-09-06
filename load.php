@@ -1,15 +1,39 @@
 <?php
 
-require_once "Layout/Layout.php";
+//Class Auto loader
 
+function classAutoLoad($classname){
+$directories = ["contents","layouts","menus"];
+
+foreach($directories AS $dir){
+    $filename =dirname(__FILE__) . DIRECTORY_SEPARATOR  . $dir .    DIRECTORY_SEPARATOR . $classname . ".php";
+    
+   
+    if(file_exists($filename) AND is_readable($filename)){
+
+        require_once $filename;
+    }
+}
+
+}
+
+spl_autoload_register("classAutoLoad");
+
+// creating instances of all classes
 $ObjLayout = new Layout();
-
-require_once "Menus/Menus.php";
 $ObjMenus = new Menus();
-
-
-require_once "contents/heading.php";
 $ObjectHeading = new heading();
+
+// require_once "Layout/Layout.php";
+
+// $ObjLayout = new Layout();
+
+// require_once "Menus/Menus.php";
+// $ObjMenus = new Menus();
+
+
+// require_once "contents/heading.php";
+// $ObjectHeading = new heading();
 
 // $arr = ["black","white","green","yellow"];
 
