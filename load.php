@@ -8,6 +8,9 @@ require_once "Menus/Menus.php";
 $ObjMenus = new Menus();
 
 
+require_once "contents/heading.php";
+$ObjectHeading = new heading();
+
 // $arr = ["black","white","green","yellow"];
 
 // foreach($arr AS $color){
