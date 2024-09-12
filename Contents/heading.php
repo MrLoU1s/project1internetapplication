@@ -4,7 +4,7 @@ class heading{
         ?>
 
         <div class="banner">
-            <h1>ICS 325 Internet Application Development</h1>
+            <h1>Heading</h1>
         </div>
         <?php
     

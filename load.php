@@ -3,7 +3,7 @@
 //Class Auto loader
 
 function classAutoLoad($classname){
-$directories = ["contents","layouts","menus"];
+$directories = ["Contents","Layout","Menus"];
 
 foreach($directories AS $dir){
     $filename =dirname(__FILE__) . DIRECTORY_SEPARATOR  . $dir .    DIRECTORY_SEPARATOR . $classname . ".php";
@@ -23,6 +23,7 @@ spl_autoload_register("classAutoLoad");
 $ObjLayout = new Layout();
 $ObjMenus = new Menus();
 $ObjectHeading = new heading();
+$ObjCont = new contents();
 
 // require_once "Layout/Layout.php";
 
