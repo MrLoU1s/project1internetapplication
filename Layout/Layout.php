@@ -1,6 +1,6 @@
-// one file caries one class
-<?php
 
+<?php
+//one file one class
 class Layout{
 public function heading(){
     ?>

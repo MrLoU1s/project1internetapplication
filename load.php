@@ -25,6 +25,13 @@ $ObjMenus = new Menus();
 $ObjectHeading = new heading();
 $ObjCont = new contents();
 
+//the following is for linking constants and dbConnection
+require "includes/dbConnection.php";
+require "includes/constants.php";
+
+$conn = new dbConnection(DBTYPE,HOSTNAME,DBPORT,HOSTUSER,HOSTPASS,DBNAME);
+
+
 // require_once "Layout/Layout.php";
 
 // $ObjLayout = new Layout();
@@ -73,8 +80,4 @@ $ObjCont = new contents();
 // }
 
 // do this if you just want to create a String
-?>
-<h1>Today is Wednesday</h1>
 
-<?php
-?>
