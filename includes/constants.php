@@ -4,7 +4,7 @@
 //use define
 //identifier- value
 // change DBTYPE to MySQLi if you want to use MySQLi
-define('DBTYPE','MySQLi' );
+define('DBTYPE','PDO' );
 define('HOSTNAME','localhost' );
 define('DBPORT','3307' ); 
 define('HOSTUSER','root' );

@@ -23,7 +23,7 @@ class dbConnection{
         $this->connection($db_type,$db_host,$db_port,$db_user,$db_pass,$db_name);
     }
     //creating connection itself
-    public function connection($db_type,$db_host,$db_port,$db_user,$db_pass,$db_name){
+    public function connection($db_type, $db_host, $db_port, $db_user, $db_pass, $db_name){
 
         switch($db_type){
             case 'PDO':
@@ -31,13 +31,13 @@ class dbConnection{
                     $db_port.=":" . $db_port;  
                 }
                 try {
-                    $this -> connection = new PDO("mysql:host=$db_host;dbname=$db_name",$db_pass,$db_user);
+                    $this -> connection = new PDO("mysql:host=$db_host;dbname=$db_name", "root", "232312");
                     //set the PDO error mode to exception
                     $this ->connection-> setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);    
-                    echo "Connection Successful :)";
+                    echo "Connection Successful ^_^";
                 }
                     catch(PDOException $e){
-                        return "Connection failed: ". $e->getMessage();
+                        echo "Connection failed: ". $e->getMessage();
                     }
                     break;
                     case 'MySQLi':
@@ -49,9 +49,10 @@ class dbConnection{
                         }
                         break;
 
-                        default:
-                            echo "Invalid DB type\n";
-                            break;
+                        // default:
+                        //     echo "Invalid DB type\n";
+                        //     break;
+                    
                         
 
         }
